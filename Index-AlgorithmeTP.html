@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EXERCICE LIEN HTML</title>
+</head>
+
+<body>
+
+	<input id="texte">
+	<button id="Ajouter" onclick="afficherListe()">Ajouter</button>
+
+		<ul id="tableau"></ul>
+
+			<script type="text/javascript">
+
+			var myArray = ["Bob", "Julien", "Roger"];
+			var resultat = "";
+
+		//remplir tableau//
+
+		function afficherListe (){
+
+			for (i=0; i<myArray.length; i++){
+				resultat+="<li>"+myArray[i]+"</li>";
+
+			document.getElementById('tableau').innerHTML=resultat;
+
+			}
+		}
+
+		afficherListe();
+
+		//afficher un nouveau prénom//
+
+		function ajouterElement(){
+
+			var total = document.getElementById('texte').value;
+
+			myArray.push(texte);
+
+			afficherListe();
+			}
+
+
+
+			</script>
+
+</body>
+</html>
